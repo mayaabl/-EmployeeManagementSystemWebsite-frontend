@@ -1,0 +1,103 @@
+.task-container {
+  display: flex; /* Enable Flexbox layout */ 
+  align-items: start; /* Align items at the start of the container */
+  max-height: 100%;
+  background-color: #eef0ff;
+  
+}
+
+.background {
+  display: flex;
+    flex-direction: column; /* Stacks children vertically */
+    align-items: center; /* Center children horizontally */
+    justify-content: flex-start; /* Align children to the start vertically */
+    background-color: #eef0ff;
+    max-height: 100%;
+     
+}
+
+.todo-list, .Doing, .Done {
+  min-width: 300px; /* Example width, adjust as needed */
+  border-radius: 20px ;
+  min-height: 100px; /* Adjust height as needed */
+  max-height: 510px;
+  margin: 10px; /* Space around each component */
+   /* Padding inside each component */
+  background-color: #f5f5ff; /* Background color */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Optional: adds shadow for depth */
+
+}
+
+.Nav-bar {
+  display: flex;
+  background-color: darkblue;
+  width: 100%;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-bottom: 10px;
+  color: aliceblue;
+} 
+.Nav-bar h1, .Nav-bar h2 {
+  display: inline-block;
+  padding: auto;
+  margin: 2px;
+}
+.Nav-bar h2 {
+  margin-right: 0;
+}
+
+.todo-list ul, .Doing ul, .Done ul {
+  list-style-type: none; /* Removes the default list styling */
+  padding: 0; /* Removes default padding */
+}
+
+.task-card {
+  background-color: white; /* Card background color */
+  color: #000000; /* Text color */
+  border-radius: 5px; /* Rounded corners */
+  padding: 15px; /* Padding inside each card */
+  margin-bottom: 10px; /* Space between cards */
+  min-height: auto;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.5); /* Optional: adds a subtle shadow for depth */
+}
+.task-card:hover {
+  background-color: white; /* Card background color */
+  color: #000000; /* Text color */
+  border-radius: 5px; /* Rounded corners */
+  padding: 15px; /* Padding inside each card */
+  margin-bottom: 10px; /* Space between cards */
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 1); /* Optional: adds a subtle shadow for depth */
+  min-height: auto;
+  border: 2px solid #2196f3;
+
+}
+
+
+
+.task-card p {
+  margin-top: 0; /* Adjusts spacing */
+  color: black;
+  font-size: 10px;
+  
+}
+.Title_ToDo{
+  display:block;
+  width: 100%;
+  position: static;
+  top: 10px;
+  z-index: 1000;
+}
+
+.list {
+  max-height: 420px;
+  overflow: scroll;
+}
+::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+}
+
+/* Styles the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background-color: white; /* Color of the scrollbar thumb */
+  border-radius: 6px; /* Optional: Adds rounded corners to the scrollbar thumb */
+}
